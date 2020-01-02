@@ -68,6 +68,7 @@ Role Variables
 |`systemd_service_Service_RuntimeDirectory`|String|| [Service]RuntimeDirectory
 |`systemd_service_Service_RuntimeDirectoryMode`|String|| [Service]RuntimeDirectoryMode
 |`systemd_service_Service_WorkingDirectory`|String|| [Service]WorkingDirectory
+|`systemd_service_Service_CacheDirectory`|String|| [Service]CacheDirectory
 
 
 

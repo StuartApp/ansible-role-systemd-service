@@ -64,6 +64,10 @@ RuntimeDirectory={{ systemd_service_Service_RuntimeDirectory }}
 RuntimeDirectoryMode={{ systemd_service_Service_RuntimeDirectoryMode }}
 {% endif -%}
 
+{% if systemd_service_Service_CacheDirectory is defined %}
+CacheDirectory={{ systemd_service_Service_CacheDirectory }}
+{% endif -%}
+
 {% if systemd_service_ExecReload is defined %}
 ExecReload={{ systemd_service_ExecReload }}
 {% endif -%}
