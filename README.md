@@ -65,7 +65,10 @@ Role Variables
 |`systemd_service_Service_LimitNOFILE`|String|| [Service]LimitNOFILE
 |`systemd_service_Service_User`|String|| [Service]User
 |`systemd_service_Service_Group`|String|| [Service]Group
+|`systemd_service_Service_RuntimeDirectory`|String|| [Service]RuntimeDirectory
+|`systemd_service_Service_RuntimeDirectoryMode`|String|| [Service]RuntimeDirectoryMode
 |`systemd_service_Service_WorkingDirectory`|String|| [Service]WorkingDirectory
+|`systemd_service_Service_CacheDirectory`|String|| [Service]CacheDirectory
 
 
 
