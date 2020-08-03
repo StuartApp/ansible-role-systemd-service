@@ -45,7 +45,13 @@ After={{ systemd_service_Unit_After | join(",") }}
 
 [Service]
 ExecStart={{ systemd_service_Service_ExecStart }}
+{% if systemd_service_Environment_File is defined %}
+{% if systemd_service_Environment_File is string %}
+EnvironmentFile={{ systemd_service_Environment_File }}
+{% else %}
 EnvironmentFile=-{{ systemd_service_default_dir }}/{{ systemd_service_name }}
+{% endif %}
+{% endif -%}
 Type={{ systemd_service_Service_Type }}
 
 {% if systemd_service_Service_User is defined %}
